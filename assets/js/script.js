@@ -39,11 +39,12 @@ var generatePassword = function(length) {
 
   for (i = 0; i < length; i++) {
     var random = Math.round(Math.random()*(characters.length-1) + 1);
-    console.log(random);
     character = characters[random-1];
     generatedPass = generatedPass + character;
   }
-  console.log(generatedPass);
+
+  return generatedPass;
+
 }
 
 
